@@ -1,0 +1,148 @@
+$primary:rgb(15, 80, 155);
+$secondary:rgb(54, 54, 54);
+
+$primary-text: rgb(255, 255, 255);
+@import "../node_modules/bootstrap/scss/bootstrap";
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.galada-regular {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.coustard-regular {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fancy-black-bg{
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border-radius: 20px; /* Rounded edges */
+    padding: 1rem; /* Optional padding */
+}
+.fancy-black-bg-no-pad{
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border-radius: 20px; /* Rounded edges */
+    
+}
+
+.text-primary {
+    color: #ffffff !important; /* Set your desired primary color */
+}
+.image-container {
+    max-width: 100%; /* Make sure the image does not overflow the container */
+    overflow: hidden; /* Hide any overflow */
+}
+.image-container img {
+    width: 100%; /* Scale the image to the width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.history{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right:4rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.gallery{
+
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+
+}
+.navbar{
+    z-index: 2;
+}
+.table-cell{
+    color: #ffffff !important;
+    background: none !important;
+}
+.rounded-table {
+    border: 2px solid white; 
+    border-radius: 0.5rem; 
+    overflow: hidden; 
+}
+
+.rounded-table thead th {
+    border-bottom: 2px solid white; 
+}
+
+.rounded-table tbody tr:last-child td {
+    border-bottom: 0; 
+}
+.rounded-container {
+        /* Light background color */
+        /* Rounded corners */
+    padding: 1rem; /* Padding around the content */
+        /* Optional shadow for better visibility */
+    max-width: 80%; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+.btn-icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-icon svg {
+    width: 5rem;
+    height: 5rem;
+}
+.btn-icon {
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border-radius: 50%;
+}
+.fancy-border{
+    
+    margin: 1rem;
+}
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Adjust the gap between SVGs as needed */
+  }
+  .svg-icon {
+    width: 4rem; /* Adjust the size of the SVGs */
+    height: 4rem;
+  }
+.fa-brands{
+    font-size: 3rem; /* Icon size */
+    margin-bottom: 8px;
+    
+}
+.svg-brands{
+    font-size:3rem;
+    height:3rem;
+    margin-bottom:8px;
+}
+.image-sizer{
+    
+    width: 100%;
+}
+.text-white {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.icon-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.clickable-div {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100%; /* Ensure the div takes full height */
+    text-decoration: none; /* Remove underline from links */
+  }

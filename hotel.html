@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Galada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Coustard:wght@400;900&family=Galada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Coustard:wght@400;900&family=Galada&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .img-bg{
+        background-image: url('images/raster/space-station-view.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        height: 100%; /* Full height for demonstration */
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="img-bg">
+    
+    <div class="container " >
+      <div class="row justify-content-center align-items-center center-div" >
+          <div class="col-6">
+              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                  <!-- Your content goes here -->
+                  <h1 id="home" class="galada-regular">Space leisure</h1>
+                  <h2 class="fw-bold text-uppercase">hotel far beyond the atmosphere</h2>
+              </div>
+              
+              <div id="form_outer_div" class="container mt-5">
+                <form class="form-horizontal fancy-black-bg">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Form Name</legend>
+                        
+                        <!-- name input -->
+                        <div class="col-12">
+                          <label class="col-form-label" for="Name">Name</label>
+                          <input id="Name" name="Name" type="text" placeholder="name" class="form-control" required="">
+                      </div>
+
+                       <!-- surname input -->
+                       <div class="col-12">
+                        <label class="col-form-label" for="surname">surname</label>
+                        <input id="surname" name="surname" type="text" placeholder="surname" class="form-control" required="">
+                    </div>
+
+                        <!-- email input -->
+                        <div class="col-12">
+                          <label class="col-form-label" for="email">email</label>
+                          <input id="email" name="email" type="email" class="form-control" required="">
+                      </div>
+                        
+                        <!-- Phone input -->
+                        <div class="col-12">
+                          <label class="col-form-label" for="phone">phone number</label>
+                          <input id="phone" name="phone" type="number" class="form-control" required="">
+                      </div>
+                        
+                        <!-- Date of Arrival and Departure inputs -->
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-4">
+                                <label class="col-form-label" for="arrival_date">Date of Arrival</label>
+                                <input id="arrival_date" name="arrival_date" type="date" class="form-control" required="">
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <label class="col-form-label" for="departure_date">Date of Departure</label>
+                                <input id="departure_date" name="departure_date" type="date" class="form-control" required="">
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                              <label class="col-form-label" for="departure_date">Number of guests</label>
+                              <input id="guest_count" name="guest_count" type="number" class="form-control" required="">
+                          </div>
+                        </div>
+                        
+
+                        
+                                    <!-- Button -->
+                        <div class="form-group row">
+                          <div class="col-sm-12 col-md-6 mb-2">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary w-100 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Hotel view
+                            </button>
+                        </div>
+                          <div class="col-sm-12 col-md-6 mb-2">
+                              <button id="booking" name="booking" class="btn btn-primary w-100 text-white">Book Now</button>
+                          </div>
+                          
+                        </div>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content bg-primary">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title text-white" id="exampleModalLabel">View from Hotel</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body container">
+
+                                      <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                        <iframe src="https://www.youtube.com/embed/r_jh0o0vfp8?si=_7NCPXchkyr3gfmD"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen>
+                                        </iframe>
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </fieldset>
+                </form>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary text-white sticky-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand text-white galada-regular" href="#" style="font-size:1.5rem">Space leisure</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link active text-white" aria-current="page" href="#home" >Home</a>
+          <a class="nav-link text-white" href="#history">History</a>
+          <a class="nav-link text-white" href="#pricing">Pricing</a>
+          <a class="nav-link text-white" href="#whole_gallery">Gallery</a>
+          <a class="nav-link text-white" href="#contact_main">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- section 2 history -->
+
+  <div id="history" class="history" style="margin-top:0%">
+      <div class="row">
+        <div class="col-12 galada-regular text-center">
+          history
+        </div>
+      </div>
+      <div class="row ">
+          <!-- Column 1 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-3 coustard-regular">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam hic quam perspiciatis quod dolore minima iste repudiandae quo fugit quia quibusdam aliquam odit possimus, rerum excepturi eius et, quas totam quaerat. Qui laudantium assumenda dolores beatae, ad pariatur totam exercitationem. Alias deleniti nostrum impedit fugiat, consectetur vitae repellendus, deserunt laboriosam, necessitatibus totam qui saepe nobis suscipit odio similique rem animi! Numquam, temporibus! Alias, reprehenderit sed, dolorum voluptas accusantium quos eligendi, fugit veritatis maiores autem officia animi iusto tenetur porro rem soluta nemo suscipit eos voluptatem odio perspiciatis? Velit, fugit! Eaque vero eum consequuntur inventore itaque impedit molestias asperiores voluptatum?
+          </div>
+          <!-- Column 2 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-3 stardos-stencil-regular">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nesciunt! Aspernatur iure consequatur modi sapiente earum culpa deleniti nihil eos ut fugiat! Saepe, obcaecati quos. Fugit impedit quaerat quis delectus nam, officiis beatae iste omnis, qui nihil ab? Fugiat, dignissimos nulla? Perferendis corrupti velit debitis commodi veritatis ullam sapiente dolores ea illo, fuga iste eaque suscipit, unde nihil quam itaque adipisci alias? Laudantium eligendi perspiciatis eum quae ullam tempora, enim asperiores numquam velit quas ut voluptatum dolorum! Aliquid saepe blanditiis voluptatum repellat dicta doloremque eius? Cupiditate neque suscipit aut sed provident nemo unde similique ullam! Nam temporibus alias nihil ipsam quia.
+          </div>
+          <!-- Column 3 (hidden on small screens) -->
+          <div class="d-none d-md-block col-12 col-lg-6 mb-3 image-container">
+              <img src="images/raster/space-station-external.jpg" alt="external_view">
+          </div>
+      </div>
+  </div>
+
+  <!-- section 3 pricing -->
+  <div id="pricing" class="history">
+    <div class="row">
+      <div class="col-12 galada-regular text-center">
+        pricing
+      </div>
+    </div>
+    <div class="row ">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-3 coustard-regular">
+            <div class="image-container">
+              <img src="images/raster/bed1_square.png" alt="bed1">
+            </div>
+            <div>
+              <table class="table rounded-table" style="background: none; ">
+                <thead style="color:black; background-color: rgba(255, 255, 255, 0.514);">
+                  <tr>
+                    
+                    <th scope="col" class="table-cell">Pers.</th>
+                    <th scope="col" class="table-cell">Night</th>
+                    <th scope="col" class="table-cell">Week</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <td class="table-cell">1</td>
+                    <td class="table-cell">200 €;</td>
+                    <td class="table-cell">1100 €;</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">2</td>
+                    <td class="table-cell">350 €;</td>
+                    <td class="table-cell">2000 €;</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">3</td>
+                    <td class="table-cell">450 €;</td>
+                    <td class="table-cell">3000 €;</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <!-- Column 2 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-3 coustard-regular">
+          <div class="image-container">
+            <img src="images/raster/bed2_square.png" alt="bed1">
+          </div>
+          <div>
+            <table class="table rounded-table" style="background: none; ">
+              <thead style="color:black; background-color: rgba(255, 255, 255, 0.514);">
+                <tr>
+                  
+                  <th scope="col" class="table-cell">Pers.</th>
+                  <th scope="col" class="table-cell">Night</th>
+                  <th scope="col" class="table-cell">Week</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td class="table-cell">1</td>
+                  <td class="table-cell">300 €;</td>
+                  <td class="table-cell">1400 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">2</td>
+                  <td class="table-cell">550 €;</td>
+                  <td class="table-cell">2500 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">3</td>
+                  <td class="table-cell">600 €;</td>
+                  <td class="table-cell">3300 €;</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-3 coustard-regular">
+          <div class="image-container">
+            <img src="images/raster/bed3_square.png" alt="bed1">
+          </div>
+          <div>
+            <table class="table rounded-table" style="background: none; ">
+              <thead style="color:black; background-color: rgba(255, 255, 255, 0.514);">
+                <tr>
+                  
+                  <th scope="col" class="table-cell">Pers.</th>
+                  <th scope="col" class="table-cell">Night</th>
+                  <th scope="col" class="table-cell">Week</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td class="table-cell">1</td>
+                  <td class="table-cell">300 €;</td>
+                  <td class="table-cell">1400 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">2</td>
+                  <td class="table-cell">550 €;</td>
+                  <td class="table-cell">2500 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">3</td>
+                  <td class="table-cell">600 €;</td>
+                  <td class="table-cell">3300 €;</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Column 4 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-3 coustard-regular">
+          <div class="image-container">
+            <img src="images/raster/bed4_square.png" alt="bed1">
+          </div>
+          <div>
+            <table class="table rounded-table" style="background: none; ">
+              <thead style="color:black; background-color: rgba(255, 255, 255, 0.514);">
+                <tr>
+                  
+                  <th scope="col" class="table-cell">Pers.</th>
+                  <th scope="col" class="table-cell">Night</th>
+                  <th scope="col" class="table-cell">Week</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td class="table-cell">1</td>
+                  <td class="table-cell">500 €;</td>
+                  <td class="table-cell">2000 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">2</td>
+                  <td class="table-cell">650 €;</td>
+                  <td class="table-cell">3000 €;</td>
+                </tr>
+                <tr>
+                  <td class="table-cell">3</td>
+                  <td class="table-cell">700 €;</td>
+                  <td class="table-cell">3800 €;</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+    </div>
+</div>
+<!-- section 4 gallery -->
+
+<div id="whole_gallery" class="container mt-5" style="margin-bottom:2rem">
+  <div class="row justify-content-center align-items-center">
+      <div class="rounded-container gallery">
+        <div>
+          <div class="col-12 galada-regular text-center ">
+            gallery
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div id="gallery" class="carousel slide carousel-fade image-container w-75 " data-bs-ride="carousel" style="margin: 0%; padding: 0%;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#gallery" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/raster/bed4_square.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fancy-black-bg" >
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, libero!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/raster/bed3_square.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fancy-black-bg" >
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, libero!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/raster/bed2_square.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fancy-black-bg" >
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, libero!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/raster/bed1_square.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fancy-black-bg" >
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, libero!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- section 5 Contact -->
+
+  <div id="contact_main" class="history text-center" style="margin-top:0%; padding-top: 1rem;">
+    <div class="col-12 galada-regular text-center mb-2" style="font-size:3rem; color:white">
+      Contact us
+    </div>
+    <div class="row ">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4  mb-3 " style="overflow: hidden;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d17010.403857692152!2d-52.776868359642634!3d5.226047187374617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMTQnMDcuOCJOIDUywrA0NSczOC41Ilc!5e1!3m2!1scs!2scz!4v1722423118302!5m2!1scs!2scz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <!-- Column 2 -->
+        <div class="col-12 col-md-4  mb-3 align-items-center">
+          
+        <div>
+          <a href="example.com" class="btn btn-icon mb-2" aria-label="Search">
+            <!-- Example SVG icon for search -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" fill="white" stroke/></svg>
+          </a>
+        </div>
+        <div>
+          <a href="example.com" class="btn btn-icon mb-2" aria-label="Search">
+            <!-- Example SVG icon for search -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="white" stroke/></svg>
+          </a>
+        </div>
+        <div>
+          <a href="example.com" class="btn btn-icon mb-2" aria-label="Search">
+            <!-- Example SVG icon for search -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="white"/></svg>
+            
+          </a>
+          
+        </div>
+            
+        </div>
+        
+        <!-- Column 3  -->
+        <div class="col-12 col-md-4  mb-3 text-center fw-bold">
+            
+          <div class="text-center">
+            <div class="d-flex flex-column align-items-center mb-2 " >
+              <div class="content-center d-flex justify-content-center align-items-center" style="width: 100%">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1.5rem; height: 1.5rem;">
+                  <!-- SVG path -->
+                  <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" fill="white"/>
+                </svg>
+              </div>
+              <div>+31 (0)71 565 62089</div>
+            </div>
+          
+            <div class="d-flex flex-column align-items-center mb-2">
+              <div class="content-center d-flex justify-content-center align-items-center" style="width: 100%">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1.5rem; height: 1.5rem;">
+                  <!-- SVG path -->
+                  <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" fill="white"/>
+                </svg>
+              </div>
+              <div>ttpe@esa.int</div>
+            </div>
+          
+            <div class="d-flex flex-column align-items-center mb-2">
+              <div class="content-center d-flex justify-content-center align-items-center" style="width: 100%">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 1.5rem; height: 1.5rem;">
+                  <!-- SVG path -->
+                  <path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" fill="white"/>
+                </svg>
+              </div>
+              <div>Kourou 97310, Francouzská Guyana</div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+</div>
+
+
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    
+    <script>
+      //navbar
+       document.addEventListener("DOMContentLoaded", () => {
+           const navLinks = document.querySelectorAll('.nav-link');
+           const navbarMenu = document.querySelector('#navbarNav');
+           const bsCollapse = new bootstrap.Collapse(navbarMenu, { toggle: false });
+
+           const collapseNavbar = () => {
+               if (window.innerWidth < 992) {
+                   bsCollapse.hide();
+               }
+           };
+           navLinks.forEach(link => link.addEventListener('click', collapseNavbar));
+
+           //modal
+           document.querySelectorAll('.modal').forEach(function (modal) {
+               modal.addEventListener('hide.bs.modal', function () {
+                   const memory = this.innerHTML;
+                   this.innerHTML = memory;
+               });
+           });
+       });
+
+    </script>
+
+  </body>
+</html>
