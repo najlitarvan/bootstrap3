@@ -38,7 +38,7 @@ form.addEventListener('submit', function(event) {
     const price_output_status =document.getElementById('price_output_status');
     price_output.textContent= String(outputNumber.toLocaleString().replace(/,/g, ' ') +' Kč');
     console.log(spendingMoney);
-    if (parseInt(outputNumber)<parseInt(spendingMoney)) {
+    if (parseInt(outputNumber)<=parseInt(spendingMoney)) {
         price_output.style.backgroundColor='#03ce3d';
         price_output_status.backgroundColor='#03ce3d';
         price_output_status.textContent= 'letenku si můžete objednat';
