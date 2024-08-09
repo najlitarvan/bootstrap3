@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script cviko</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <style>
+        .img-bg{
+        background-image: url('images/raster/sky_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        height: 100%; /* Full height for demonstration */
+        color: white;
+      }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            
+            min-height: 100vh; /* Center vertically too if desired */
+        }
+    </style>
+</head>
+<body class="img-bg">
+    <div class="form-container row">
+        <div class="col-12 col-md-7">
+            <div class="container mt-4 ">
+                <form id="flight_booking" class="form-horizontal text-white p-4 rounded p" style="background-color: rgba(0, 0, 0, 0.7);">
+                    <fieldset>
+                        <div class="row justify-content-center align-content-center">
+                            <div class="col-12 col-md-10 mb-3">
+                                <label for="destinations" class="form-label">Destinace</label>
+                                <select name="destinations" id="destinations" class="form-select" required>
+                                    <option value="">--vyberte destinaci--</option>
+                                    <option value="Praha">Praha 500 Kč</option>
+                                    <option value="Frankfurt">Frankfurt 3000 Kč</option>
+                                    <option value="New_York">New York 15000 Kč</option>
+                                    <option value="Sydney">Sydney 30000 Kč</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-2 mb-3">
+                                <label for="flight_tickets" class="form-label">letenky</label>
+                                <select name="flight_tickets" id="flight_tickets" class="form-select" required>
+                                    <option value="">-- počet letenek--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+            
+                        </div>
+                        <div class="justify-content-center align-content-center d-flex ">
+                            <div class="mb-3 ">
+                                <label class="form-label">Class</label>
+                                <div>
+                                    <input type="radio" id="economy" name="class" value="economy" class="form-check-input" required checked/>
+                                    <label for="economy" class="form-check-label">economy</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="business" name="class" value="business" class="form-check-input" required/>
+                                    <label for="business" class="form-check-label">business</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="royal" name="class" value="royal" class="form-check-input" required/>
+                                    <label for="royal" class="form-check-label">royal</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="return_flight" class="form-check-label">Zpáteční let</label>
+                                <input type="checkbox" id="return_flight" name="return_flight" class="form-check-input" />
+                            </div>
+                        </div>
+                        <div class="container ">
+                            <div class="d-flex justify-content-center">
+                                <div class="text-center">
+                                    <label for="price_output" class="form-label col-12">výstupní cena:</label>
+                                    <div class="col-12 border-4 border-white rounded-4 fw-bolder fs-2" style="border: 1rem white solid;  background-color: rgba(0, 0, 0, 0.5);">
+                                        <p id="price_output"  style="border-radius: 0.5rem 0.5rem 0 0;"></p>
+                                        <p id="price_output_status" ></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="spending_money" class="form-label">částka k utrácení</label>
+                            <input type="number" id="spending_money" name="spending_money" class="form-control" required/>
+                        </div>
+                        <div class="mb-3 justify-content-center d-flex">
+                            <button type="submit" class="btn bg-black text-white border-4 border-white rounded-4 fw-bolder">Poslat</button>
+                        </div>
+                        <div class="mb-3" style="z-index: 1;">
+                            <label for="message" class="form-label">Zpráva</label>
+                            <textarea id="message" name="message" rows="10" cols="40" class="form-control" placeholder="prosím napište zprávu či poznámku"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main_script.js"></script>
+</body>
+</html>
