@@ -195,7 +195,7 @@
         <div class="col-12 col-md-6 col-lg-3 row" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding-top: 1rem;">
             
             <div class="image-container image-sizer">
-                <img src="images/raster/space-station-view.jpg" alt="Project Image">
+                <img src="images/raster/book.jpg" alt="Project Image">
             </div>
             <div class="text-center">
                 <h3 class="text-white"> Website: book form | <span style="color:rgb(42, 133, 236)">MySQL</span></h3>
@@ -418,7 +418,7 @@
   </div>
 
   <div id="contact" class="container d-flex justify-content-center align-items-center">
-    <form class="form-horizontal history text-white col-12 col-md-8 col-lg-6" style="background-color: rgba(0, 0, 0, 0.7);">
+    <form class="form-horizontal history text-white col-12 col-md-8 col-lg-6" style="background-color: rgba(0, 0, 0, 0.7);" action="send_email.php" method="post">
         <fieldset>
             <!-- Form Name -->
             <legend class="galada-regular text-center">Contact</legend>
@@ -426,7 +426,7 @@
             <!-- Name input -->
             <div class="col-12 mb-3">
                 <label class="col-form-label" for="Name">Name</label>
-                <input id="Name" name="Name" type="text" placeholder="name" class="form-control" required="">
+                <input id="Name" name="name" type="text" placeholder="name" class="form-control" required="">
             </div>
 
             <!-- Email input -->
@@ -444,13 +444,14 @@
             <!-- Button -->
             <div class="form-group row d-flex justify-content-center">
                 <div class="col-sm-12 col-md-6 mb-2">
-                    <button id="send" name="send" class="btn btn-primary w-100 text-white">Contact me</button>
+                    <button id="send" name="send" class="btn btn-primary w-100 text-white" type="submit">Contact me</button>
                 </div>
             </div>
             
         </fieldset>
     </form>
 </div>
+
 <footer class="footer">
     <div class="d-flex justify-content-center align-items-center mt-5 history fs-3 fw-semibold p-1"  style="background-color: rgba(0, 0, 0, 0.7); margin-inline: 0px;">
 
